@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "type": "module",
   "dependencies": {
+    "better-sqlite3": "^11.7.0",
     "jsonwebtoken": "^9.0.2",
     "koa": "^2.15.3",
     "koa-bodyparser": "^4.4.1",

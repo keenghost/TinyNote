@@ -1,0 +1,55 @@
+{
+  "name": "tiny-note",
+  "version": "0.1.0",
+  "description": "TinyNote is a simple note taking app built with Node.js and Vue.js",
+  "author": "keenghost",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keenghost/TinyNote.git"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^18.0.0 || >= 20.0.0",
+    "pnpm": "^9.0.0"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "simple-git-hooks && tsx scripts/post-install.ts",
+    "dev": "tsx scripts/dev.ts",
+    "build": "tsx scripts/build.ts",
+    "check-types": "tsx scripts/check-types.ts"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.10.1",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.16.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "lint-staged": "^15.2.10",
+    "minimist": "^1.2.8",
+    "picocolors": "^1.1.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "simple-git-hooks": "^2.11.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged && pnpm check-types",
+    "commit-msg": "pnpm tsx scripts/check-commit-msg.ts"
+  },
+  "lint-staged": {
+    "*.{js,cjs,ts,tsx,vue}": [
+      "eslint",
+      "prettier --write",
+      "pnpm tsx scripts/check-modules.ts"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  }
+}

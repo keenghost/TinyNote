@@ -1,7 +1,7 @@
 {
   "name": "tiny-note",
   "version": "0.1.0",
-  "description": "TinyNote is a simple note taking app built with Node.js and Vue.js",
+  "description": "TinyNote is a simple note taking app built with Node.js and React.js",
   "author": "keenghost",
   "license": "MIT",
   "repository": {

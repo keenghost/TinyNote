@@ -14,7 +14,6 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/re
     npm install -g pnpm --registry=$NPM_REGISTRY && \
     pnpm install --registry=$NPM_REGISTRY && \
     pnpm build srv web && \
-    cp /tinynote/packages/srv/package.json /tinynote/packages/srv/dist/package.json && \
     mv /tinynote/packages/web/dist /tinynote/packages/srv/dist/public && \
     rm -rf /tinynote/packages/web/node_modules && \
     rm -rf /tinynote/packages/srv/node_modules && \

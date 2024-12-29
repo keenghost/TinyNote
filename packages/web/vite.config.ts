@@ -8,6 +8,8 @@ export default defineConfig({
   base: './',
   plugins: [react()],
   build: {
+    outDir: '../srv/dist/public',
+    emptyOutDir: true,
     minify: true,
     target: 'ES2020',
     assetsInlineLimit: 0,

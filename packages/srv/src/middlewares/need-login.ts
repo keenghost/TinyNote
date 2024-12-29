@@ -1,5 +1,5 @@
-import type { Context, Next } from 'koa'
-import { verifyToken } from '../common/utils'
+import { type Context, type Next } from 'koa'
+import { verifyToken } from '../common/token'
 
 export default async (ctx: Context, next: Next) => {
   const token = ctx.cookies.get('tinynote_token') || ''

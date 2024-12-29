@@ -8,7 +8,11 @@ try {
 
 fs.mkdirSync('dist')
 
-child_process.execSync('pnpm tsc --noEmit false')
+child_process.execSync('pnpm tsc --noEmit false --incremental false')
+
+fs.mkdirSync('dist/runtime')
+
+fs.copyFileSync('package.json', 'dist/package.json')
 
 function importDotJs(inPath: string) {
   const dirs = fs.readdirSync(inPath).map(item => path.resolve(inPath, item))

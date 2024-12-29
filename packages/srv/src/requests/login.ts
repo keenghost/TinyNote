@@ -1,13 +1,11 @@
-import { newToken } from '../common/utils'
-import type { IContext, IEmptyRes, ILoginReq } from '../types/http'
+import { config } from '../common/config'
+import { newToken } from '../common/token'
+import { type IContext, type ILoginReq } from '../types/http'
 
-const USERNAME = process.env['WEB_USER'] || 'admin'
-const PASSWORD = process.env['WEB_PASS'] || 'admin'
-
-export default async (ctx: IContext<IEmptyRes>) => {
+export default async (ctx: IContext) => {
   const { username, password } = ctx.request.body as ILoginReq
 
-  if (username !== USERNAME || password !== PASSWORD) {
+  if (username !== config.get('username') || password !== config.get('password')) {
     throw new Error('username or password wrong')
   }
 
@@ -18,6 +16,4 @@ export default async (ctx: IContext<IEmptyRes>) => {
     overwrite: true,
     maxAge: 365 * 24 * 60 * 60 * 1000,
   })
-
-  ctx.body = 'OK'
 }

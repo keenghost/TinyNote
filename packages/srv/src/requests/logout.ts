@@ -1,9 +1,7 @@
-import type { IContext, IEmptyRes } from '../types/http'
+import { type IContext } from '../types/http'
 
-export default async (ctx: IContext<IEmptyRes>) => {
+export default async (ctx: IContext) => {
   ctx.cookies.set('tinynote_token', null, {
     maxAge: 0,
   })
-
-  ctx.body = 'OK'
 }

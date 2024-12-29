@@ -19,7 +19,8 @@
     "postinstall": "simple-git-hooks && tsx scripts/post-install.ts",
     "dev": "tsx scripts/dev.ts",
     "build": "tsx scripts/build.ts",
-    "check-types": "tsx scripts/check-types.ts"
+    "check-types": "tsx scripts/check-types.ts",
+    "remove-postinstall": "tsx scripts/remove-postinstall.ts"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",

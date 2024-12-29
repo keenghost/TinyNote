@@ -1,0 +1,14 @@
+{
+  "name": "TinyNote",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "./logo-OT0JRKQw.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+import react from '@vitejs/plugin-react'
+import autoprefixer from 'autoprefixer'
+import { fileURLToPath } from 'node:url'
+import tailwindcss from 'tailwindcss'
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  base: './',
+  plugins: [react()],
+  build: {
+    minify: true,
+    target: 'ES2020',
+    assetsInlineLimit: 0,
+    chunkSizeWarningLimit: 1024,
+    rollupOptions: {
+      output: {
+        manualChunks: inId => {
+          if (inId.includes('node_modules')) {
+            return 'vendor'
+          }
+        },
+      },
+    },
+  },
+  css: {
+    postcss: {
+      plugins: [tailwindcss, autoprefixer],
+    },
+  },
+  server: {
+    host: '[::]',
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:7777',
+        changeOrigin: true,
+      },
+    },
+  },
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@assets': fileURLToPath(new URL('./assets', import.meta.url)),
+    },
+  },
+})

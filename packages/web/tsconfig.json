@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@assets/*": ["./assets/*"]
+    },
+    "jsx": "react-jsx",
+    "types": ["./src/types/global.d.ts"]
+  },
+  "include": ["src/**/*", "src/**/*.tsx"],
+  "extends": "../../tsconfig.json"
+}

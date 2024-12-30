@@ -13,7 +13,12 @@ app.on('error', () => {})
 
 app.use(koaBodyParser())
 app.use(router.routes())
-app.use(koaMount('/assets', koaStatic(path.resolve('public/assets'))))
+app.use(
+  koaMount(
+    '/assets',
+    koaStatic(path.resolve('public/assets'), { maxAge: 30 * 24 * 60 * 60 * 1000 })
+  )
+)
 app.use(async ctx => {
   ctx.type = 'html'
   ctx.body = fs.createReadStream(path.resolve('public/index.html'))

@@ -2,13 +2,16 @@
   "compilerOptions": {
     "sourceMap": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "moduleResolution": "Bundler",
+
     "paths": {
-      "@/*": ["./src/*"],
+      "@src/*": ["./src/*"],
       "@assets/*": ["./assets/*"]
     },
+
     "jsx": "react-jsx",
-    "types": ["./src/types/global.d.ts"]
+    "types": ["./src/types/g.d.ts"]
   },
-  "include": ["src/**/*", "src/**/*.tsx"],
+  "include": ["src", "**/*.tsx"],
   "extends": "../../tsconfig.json"
 }

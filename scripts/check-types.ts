@@ -1,10 +1,10 @@
 import child_process from 'node:child_process'
 import fs from 'node:fs'
 
-child_process.execSync('pnpm tsc --incremental --noEmit')
+const dirs: string[] = ['./']
 
-const pkgs = fs.readdirSync('packages')
+dirs.push(...fs.readdirSync('packages').map(pkg => `packages/${pkg}`))
 
-for (const pkg of pkgs) {
-  child_process.execSync('pnpm  tsc --incremental --noEmit', { cwd: `packages/${pkg}` })
+for (const dir of dirs) {
+  child_process.execSync('pnpm tsc --noEmit', { cwd: dir })
 }

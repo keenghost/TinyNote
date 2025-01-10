@@ -3,14 +3,11 @@
     "sourceMap": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "moduleResolution": "Bundler",
-
+    "jsx": "react-jsx",
     "paths": {
       "@src/*": ["./src/*"],
       "@assets/*": ["./assets/*"]
-    },
-
-    "jsx": "react-jsx",
-    "types": ["./src/types/g.d.ts"]
+    }
   },
   "include": ["src", "**/*.tsx"],
   "extends": "../../tsconfig.json"

@@ -26,6 +26,7 @@ export default tsESLint.config(
       eqeqeq: 'error',
       'newline-before-return': 'error',
       'no-debugger': 'error',
+      'no-duplicate-imports': 'error',
 
       '@typescript-eslint/no-explicit-any': 'off',
 

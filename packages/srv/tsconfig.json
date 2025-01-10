@@ -3,6 +3,6 @@
     "outDir": "dist",
     "tsBuildInfoFile": "./tsconfig.tsbuildinfo"
   },
-  "include": ["src/**/*"],
+  "include": ["src", "types.ts"],
   "extends": "../../tsconfig.json"
 }

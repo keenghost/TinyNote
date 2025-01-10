@@ -1,14 +1,3 @@
-export interface IUnit {
-  uid: number
-  type: number
-  name: string
-  pid: number
-  kids: number[]
-  note: string
-  ntype: number
-  notev: number
-}
-
 export const enum EUNIT_TYPE {
   FOLDER = 1,
   BOOK = 2,

@@ -1,7 +1,8 @@
 import BetterSqlite3, { Database as BetterSqlite3Database } from 'better-sqlite3'
 import path from 'node:path'
 import { ETableFieldType, type ITableDefine, checkDB } from '../common/dbutils'
-import { EMOD_TYPE, ENOTE_TYPE, EUNIT_TYPE, type IUnit } from '../types/common.d'
+import { type IUnit } from '../types/common'
+import { EMOD_TYPE, ENOTE_TYPE, EUNIT_TYPE } from '../types/enum'
 
 export type IUnitInTable = Omit<IUnit, 'kids'> & {
   kids: string

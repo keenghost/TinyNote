@@ -1,5 +1,6 @@
 import { type Context } from 'koa'
-import { type EMOD_TYPE, type IUnit } from './common'
+import { type IUnit } from './common'
+import { type EMOD_TYPE } from './enum'
 
 export interface IContext<TResBody = Record<string, any>> extends Context {
   body: TResBody

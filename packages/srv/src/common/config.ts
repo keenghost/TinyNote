@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { nanoid, toJSON } from './utils'
+import { nanoid, toJSON } from './utils.js'
 
 export interface IConfig {
   username: string

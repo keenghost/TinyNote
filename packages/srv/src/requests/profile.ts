@@ -1,6 +1,6 @@
 import crypto from 'node:crypto'
-import { config } from '../common/config'
-import { type IContext, type IProfileRes } from '../types/http'
+import { config } from '../common/config.js'
+import { type IContext, type IProfileRes } from '../types/http.js'
 
 const WEB_DB_PASS_SIGN = crypto
   .createHash('md5')

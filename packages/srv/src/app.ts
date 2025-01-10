@@ -5,7 +5,7 @@ import koaStatic from 'koa-static'
 import fs from 'node:fs'
 import http from 'node:http'
 import path from 'node:path'
-import router from './router'
+import router from './router.js'
 
 const app = new koa()
 

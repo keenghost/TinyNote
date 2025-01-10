@@ -1,6 +1,6 @@
 import jsonwebtoken from 'jsonwebtoken'
-import { config } from './config'
-import { nanoid } from './utils'
+import { config } from './config.js'
+import { nanoid } from './utils.js'
 
 const __ALGORITHM__ = 'HS256'
 const __ISSUER__ = 'keenghost'

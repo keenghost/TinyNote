@@ -1,6 +1,6 @@
-import { config } from '../common/config'
-import { newToken } from '../common/token'
-import { type IContext, type ILoginReq } from '../types/http'
+import { config } from '../common/config.js'
+import { newToken } from '../common/token.js'
+import { type IContext, type ILoginReq } from '../types/http.js'
 
 export default async (ctx: IContext) => {
   const { username, password } = ctx.request.body as ILoginReq

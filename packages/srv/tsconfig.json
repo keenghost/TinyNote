@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": false,
     "outDir": "dist",
     "tsBuildInfoFile": "./tsconfig.tsbuildinfo"
   },

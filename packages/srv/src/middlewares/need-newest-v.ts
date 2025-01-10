@@ -1,5 +1,5 @@
 import { type Context, type Next } from 'koa'
-import { db } from '../common/db'
+import { db } from '../common/db.js'
 
 export default async (ctx: Context, next: Next) => {
   const newestV = parseInt((ctx.headers['x-newest-v'] as string) || '0', 10)

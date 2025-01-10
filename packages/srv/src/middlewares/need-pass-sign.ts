@@ -1,6 +1,6 @@
 import { type Context, type Next } from 'koa'
 import crypto from 'node:crypto'
-import { config } from '../common/config'
+import { config } from '../common/config.js'
 
 const WEB_DB_PASS_SIGN = crypto
   .createHash('md5')

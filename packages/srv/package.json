@@ -2,20 +2,26 @@
   "name": "srv",
   "version": "0.1.0",
   "type": "module",
+  "exports": {
+    "./types": {
+      "types": "./types.d.ts",
+      "default": "./types.js"
+    }
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "tsx watch ./src/app.ts",
+    "build": "tsx ./scripts/build.ts",
+    "start": "node ./src/app.js"
+  },
   "dependencies": {
-    "better-sqlite3": "^11.7.0",
+    "better-sqlite3": "^11.7.2",
     "jsonwebtoken": "^9.0.2",
     "koa": "^2.15.3",
     "koa-bodyparser": "^4.4.1",
     "koa-mount": "^4.0.0",
     "koa-router": "^13.0.1",
     "koa-static": "^5.0.0"
-  },
-  "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "dev": "tsx watch ./src/app.ts",
-    "build": "tsx ./scripts/build.ts",
-    "start": "node ./app.js"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.12",

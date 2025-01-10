@@ -8,9 +8,9 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.15",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/crypto-js": "^4.2.2",
-    "@types/react": "^19.0.2",
+    "@types/react": "^19.0.4",
     "@types/react-dom": "^19.0.2",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
@@ -22,11 +22,12 @@
     "mobx-react-lite": "^4.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-markdown": "^9.0.1",
+    "react-markdown": "^9.0.3",
     "react-router-dom": "^7.1.1",
-    "sass": "^1.83.0",
+    "sass": "^1.83.1",
+    "srv": "workspace:^*",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.2",
-    "vite": "^6.0.6"
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7"
   }
 }

@@ -2,7 +2,7 @@ FROM node:20.18.1-alpine
 
 ARG NPM_REGISTRY=https://registry.npmjs.org
 
-WORKDIR /tinynote
+WORKDIR /builddir
 
 COPY . .
 
@@ -14,14 +14,12 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/re
     npm install -g pnpm --registry=$NPM_REGISTRY && \
     pnpm install --registry=$NPM_REGISTRY && \
     pnpm build srv web && \
-    pnpm remove-postinstall && \
-    rm -rf /tinynote/.git && \
-    rm -rf /tinynote/packages/web/node_modules && \
-    rm -rf /tinynote/packages/srv/node_modules && \
-    rm -rf /tinynote/node_modules && \
+    mv /builddir/packages/srv/dist /tinynote && \
+    cd /tinynote && \
+    rm -rf /builddir && \
     pnpm store prune && \
     pnpm install --prod --registry=$NPM_REGISTRY
 
-WORKDIR /tinynote/packages/srv/dist
+WORKDIR /tinynote
 
 CMD ["dumb-init", "pnpm", "run", "start"]

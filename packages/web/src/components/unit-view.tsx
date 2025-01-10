@@ -1,5 +1,5 @@
-import { type Unit } from '@/common/store'
-import { ENOTE_TYPE, EUNIT_TYPE } from '@/types/common'
+import { type Unit } from '@src/common/store'
+import { ENOTE_TYPE, EUNIT_TYPE } from 'srv/types'
 
 type IProps = {
   className?: string

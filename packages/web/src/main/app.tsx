@@ -1,5 +1,5 @@
-import '@/main/app.scss'
-import { router } from '@/main/router'
+import '@src/main/app.scss'
+import { router } from '@src/main/router'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 

@@ -1,11 +1,11 @@
-import { config, ENOTE_ERROR_TYPE, store } from '@/common/store'
-import BookPreviewModal from '@/components/book-preview-modal'
-import UnitView from '@/components/unit-view'
-import { ENOTE_TYPE, EUNIT_TYPE } from '@/types/common'
-import Button from '@/ui-components/button'
-import Modal from '@/ui-components/modal'
+import { config, ENOTE_ERROR_TYPE, store } from '@src/common/store'
+import BookPreviewModal from '@src/components/book-preview-modal'
+import UnitView from '@src/components/unit-view'
+import Button from '@src/ui-components/button'
+import Modal from '@src/ui-components/modal'
 import { observer } from 'mobx-react-lite'
 import { useState } from 'react'
+import { ENOTE_TYPE, EUNIT_TYPE } from 'srv/types'
 
 interface IProps {
   type: 'warning' | 'error'

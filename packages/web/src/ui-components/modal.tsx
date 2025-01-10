@@ -1,7 +1,7 @@
-import EventBus from '@/common/event-bus'
-import { historyManager } from '@/common/history-mgr'
-import { getRandomString } from '@/common/utils'
-import Button, { type IButtonType } from '@/ui-components/button'
+import EventBus from '@src/common/event-bus'
+import { historyManager } from '@src/common/history-mgr'
+import { getRandomString } from '@src/common/utils'
+import Button, { type IButtonType } from '@src/ui-components/button'
 import { useEffect, useRef, useState } from 'react'
 import ReactDOM from 'react-dom'
 

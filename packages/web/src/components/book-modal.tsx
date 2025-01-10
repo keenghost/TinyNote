@@ -1,6 +1,6 @@
-import { store } from '@/common/store'
-import BookView from '@/components/book-view'
-import Modal from '@/ui-components/modal'
+import { store } from '@src/common/store'
+import BookView from '@src/components/book-view'
+import Modal from '@src/ui-components/modal'
 import { observer } from 'mobx-react-lite'
 
 export default observer(() => {

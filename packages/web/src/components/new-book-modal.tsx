@@ -1,10 +1,10 @@
-import { httpAdd } from '@/common/api'
-import EventBus from '@/common/event-bus'
-import { synckit } from '@/common/store'
-import { ENOTE_TYPE, EUNIT_TYPE } from '@/types/common'
-import Input, { type IInputMethods } from '@/ui-components/input'
-import Modal from '@/ui-components/modal'
+import { httpAdd } from '@src/common/api'
+import EventBus from '@src/common/event-bus'
+import { synckit } from '@src/common/store'
+import Input, { type IInputMethods } from '@src/ui-components/input'
+import Modal from '@src/ui-components/modal'
 import { useRef, useState } from 'react'
+import { ENOTE_TYPE, EUNIT_TYPE } from 'srv/types'
 
 const ENewItems = [
   { type: ENOTE_TYPE.TXT, pngClass: 'png-txt', name: 'txt' },

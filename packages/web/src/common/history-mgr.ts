@@ -1,4 +1,4 @@
-import EventBus from '@/common/event-bus'
+import EventBus from '@src/common/event-bus'
 
 class HistoryManager {
   #actionIds: string[] = []

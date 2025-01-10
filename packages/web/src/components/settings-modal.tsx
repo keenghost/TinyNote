@@ -1,4 +1,4 @@
-import Modal from '@/ui-components/modal'
+import Modal from '@src/ui-components/modal'
 
 interface IProps {
   visible: boolean

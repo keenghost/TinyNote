@@ -1,10 +1,10 @@
-import { httpStatus } from '@/common/api'
-import PageLoading from '@/components/page-loading'
+import { httpStatus } from '@src/common/api'
+import PageLoading from '@src/components/page-loading'
 import { lazy, Suspense } from 'react'
 import { createBrowserRouter, type RouteObject } from 'react-router-dom'
 
-const PageLogin = lazy(() => import('@/pages/login'))
-const PageNotes = lazy(() => import('@/pages/notes'))
+const PageLogin = lazy(() => import('@src/pages/login'))
+const PageNotes = lazy(() => import('@src/pages/notes'))
 
 const LazyLoad = (PageComponent: React.LazyExoticComponent<() => React.JSX.Element>) => {
   return (

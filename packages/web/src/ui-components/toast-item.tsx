@@ -1,4 +1,4 @@
-import PngButton from '@/ui-components/png-button'
+import PngButton from '@src/ui-components/png-button'
 import { useEffect } from 'react'
 
 interface IProps {

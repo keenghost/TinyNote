@@ -1,7 +1,7 @@
-import EventBus from '@/common/event-bus'
-import NewBookModal from '@/components/new-book-modal'
-import NewFolderModal from '@/components/new-folder-modal'
-import PngButton from '@/ui-components/png-button'
+import EventBus from '@src/common/event-bus'
+import NewBookModal from '@src/components/new-book-modal'
+import NewFolderModal from '@src/components/new-folder-modal'
+import PngButton from '@src/ui-components/png-button'
 import { useRef, useState } from 'react'
 
 interface IProps {

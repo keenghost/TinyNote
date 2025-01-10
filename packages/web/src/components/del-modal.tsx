@@ -1,8 +1,8 @@
-import { httpDel } from '@/common/api'
-import EventBus from '@/common/event-bus'
-import { store, synckit } from '@/common/store'
-import UnitView from '@/components/unit-view'
-import Modal from '@/ui-components/modal'
+import { httpDel } from '@src/common/api'
+import EventBus from '@src/common/event-bus'
+import { store, synckit } from '@src/common/store'
+import UnitView from '@src/components/unit-view'
+import Modal from '@src/ui-components/modal'
 import { observer } from 'mobx-react-lite'
 
 type IProps = {

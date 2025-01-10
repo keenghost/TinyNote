@@ -1,5 +1,5 @@
-import { type IContextMenu } from '@/ui-components/context-menu'
-import { type IToastMessage } from '@/ui-components/toast'
+import { type IContextMenu } from '@src/ui-components/context-menu'
+import { type IToastMessage } from '@src/ui-components/toast'
 import Mitt, { type Emitter } from 'mitt'
 
 type MyEventTypes = {

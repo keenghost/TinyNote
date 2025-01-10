@@ -1,6 +1,6 @@
-import { config, store } from '@/common/store'
-import BookView from '@/components/book-view'
-import Modal from '@/ui-components/modal'
+import { config, store } from '@src/common/store'
+import BookView from '@src/components/book-view'
+import Modal from '@src/ui-components/modal'
 import { observer } from 'mobx-react-lite'
 
 interface IProps {

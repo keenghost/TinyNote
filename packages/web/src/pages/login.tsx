@@ -1,4 +1,4 @@
-import { httpLogin } from '@/common/api'
+import { httpLogin } from '@src/common/api'
 import { useState } from 'react'
 
 export default () => {

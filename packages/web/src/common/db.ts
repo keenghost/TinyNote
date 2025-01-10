@@ -1,4 +1,4 @@
-import { type Unit, config } from '@/common/store'
+import { type Unit, config } from '@src/common/store'
 import CryptoJS from 'crypto-js'
 import { Dexie, type EntityTable } from 'dexie'
 

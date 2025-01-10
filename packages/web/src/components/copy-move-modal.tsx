@@ -1,11 +1,11 @@
-import { httpCopy, httpMove } from '@/common/api'
-import EventBus from '@/common/event-bus'
-import { store, synckit, type Unit } from '@/common/store'
-import UnitView from '@/components/unit-view'
-import { EUNIT_TYPE } from '@/types/common'
-import Button from '@/ui-components/button'
-import Modal from '@/ui-components/modal'
+import { httpCopy, httpMove } from '@src/common/api'
+import EventBus from '@src/common/event-bus'
+import { store, synckit, type Unit } from '@src/common/store'
+import UnitView from '@src/components/unit-view'
+import Button from '@src/ui-components/button'
+import Modal from '@src/ui-components/modal'
 import { useState } from 'react'
+import { EUNIT_TYPE } from 'srv/types'
 
 type IProps = {
   uid: number

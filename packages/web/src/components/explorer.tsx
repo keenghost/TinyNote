@@ -1,5 +1,5 @@
-import { config, store } from '@/common/store'
-import Column from '@/components/column'
+import { config, store } from '@src/common/store'
+import Column from '@src/components/column'
 import { observer } from 'mobx-react-lite'
 import { useEffect, useState } from 'react'
 

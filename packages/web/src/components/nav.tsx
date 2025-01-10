@@ -1,5 +1,5 @@
-import { store } from '@/common/store'
-import Button from '@/ui-components/button'
+import { store } from '@src/common/store'
+import Button from '@src/ui-components/button'
 import { observer } from 'mobx-react-lite'
 
 export default observer(() => {

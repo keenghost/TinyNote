@@ -1,15 +1,15 @@
-import { config } from '@/common/store'
-import type {
-  IAddReq,
-  ICopyReq,
-  IDelReq,
-  IListRes,
-  IModNameReq,
-  IModNotesReq,
-  IMoveReq,
-  IProfileRes,
-} from '@/types/common'
+import { config } from '@src/common/store'
 import axios, { type AxiosError, type AxiosRequestConfig } from 'axios'
+import {
+  type IAddReq,
+  type ICopyReq,
+  type IDelReq,
+  type IListRes,
+  type IModNameReq,
+  type IModNotesReq,
+  type IMoveReq,
+  type IProfileRes,
+} from 'srv/types'
 
 export type IHttpError = AxiosError
 

@@ -1,14 +1,13 @@
-import EventBus from '@/common/event-bus'
-import { type Unit as UnitClass } from '@/common/store'
-import { config, store } from '@/common/store'
-import ColumnOptimize from '@/components/column-optimize'
-import CopyMoveModal from '@/components/copy-move-modal'
-import DelModal from '@/components/del-modal'
-import ModNameModal from '@/components/mod-name-modal'
-import UnitView from '@/components/unit-view'
-import { EUNIT_TYPE } from '@/types/common'
+import EventBus from '@src/common/event-bus'
+import { config, store, type Unit as UnitClass } from '@src/common/store'
+import ColumnOptimize from '@src/components/column-optimize'
+import CopyMoveModal from '@src/components/copy-move-modal'
+import DelModal from '@src/components/del-modal'
+import ModNameModal from '@src/components/mod-name-modal'
+import UnitView from '@src/components/unit-view'
 import { observer } from 'mobx-react-lite'
 import { useState } from 'react'
+import { EUNIT_TYPE } from 'srv/types'
 
 type IProps = {
   uid: number

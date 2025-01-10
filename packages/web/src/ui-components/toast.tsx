@@ -1,6 +1,6 @@
-import EventBus from '@/common/event-bus'
-import { getRandomString } from '@/common/utils'
-import ToastItem from '@/ui-components/toast-item'
+import EventBus from '@src/common/event-bus'
+import { getRandomString } from '@src/common/utils'
+import ToastItem from '@src/ui-components/toast-item'
 import { useEffect, useState } from 'react'
 
 export interface IToastMessage {

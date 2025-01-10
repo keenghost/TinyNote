@@ -1,4 +1,4 @@
-import EventBus from '@/common/event-bus'
+import EventBus from '@src/common/event-bus'
 import { useEffect, useRef, useState } from 'react'
 
 type IContextDirection = 'LT' | 'LB' | 'RT' | 'RB' | 'TL' | 'TR' | 'BL' | 'BR'

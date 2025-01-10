@@ -1,10 +1,10 @@
-import EventBus from '@/common/event-bus'
-import KeyValue from '@/plugins/keyvalue'
-import Markdown from '@/plugins/md'
-import Txt from '@/plugins/txt'
-import { ENOTE_TYPE } from '@/types/common'
-import Button from '@/ui-components/button'
+import EventBus from '@src/common/event-bus'
+import KeyValue from '@src/plugins/keyvalue'
+import Markdown from '@src/plugins/md'
+import Txt from '@src/plugins/txt'
+import Button from '@src/ui-components/button'
 import { useEffect, useState } from 'react'
+import { ENOTE_TYPE } from 'srv/types'
 
 interface IProps {
   uid: number

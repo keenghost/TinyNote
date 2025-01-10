@@ -1,8 +1,8 @@
-import { type IHttpError, httpList, httpModNotes } from '@/common/api'
-import { db } from '@/common/db'
-import EventBus from '@/common/event-bus'
-import { EMOD_TYPE, ENOTE_TYPE, EUNIT_TYPE } from '@/types/common'
+import { type IHttpError, httpList, httpModNotes } from '@src/common/api'
+import { db } from '@src/common/db'
+import EventBus from '@src/common/event-bus'
 import { action, makeObservable, observable } from 'mobx'
+import { EMOD_TYPE, ENOTE_TYPE, EUNIT_TYPE } from 'srv/types'
 
 export const enum ENOTE_ERROR_TYPE {
   DELETED = 1,

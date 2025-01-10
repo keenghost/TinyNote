@@ -1,5 +1,5 @@
-import { store } from '@/common/store'
-import BookView from '@/components/book-view'
+import { store } from '@src/common/store'
+import BookView from '@src/components/book-view'
 import { observer } from 'mobx-react-lite'
 
 export default observer(() => {

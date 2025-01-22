@@ -1,9 +1,6 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": null,
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },

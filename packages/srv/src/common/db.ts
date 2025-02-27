@@ -1,6 +1,6 @@
 import BetterSqlite3, { Database as BetterSqlite3Database } from 'better-sqlite3'
 import path from 'node:path'
-import { ETableFieldType, type ITableDefine, checkDB } from '../common/dbutils.js'
+import { checkDB, ETableFieldType, type ITableDefine } from '../common/dbutils.js'
 import { type IUnit } from '../types/common.js'
 import { EMOD_TYPE, ENOTE_TYPE, EUNIT_TYPE } from '../types/enum.js'
 

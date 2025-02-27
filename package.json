@@ -26,7 +26,7 @@
     "commit-msg": "pnpm tsx scripts/check-commit-msg.ts"
   },
   "lint-staged": {
-    "*.{js,cjs,ts,tsx,vue}": [
+    "*.{js,ts,tsx}": [
       "eslint",
       "prettier --write",
       "pnpm tsx scripts/check-modules.ts"
